@@ -26,6 +26,10 @@ class VkLog {
 
   public static function send(string $message): void {
     self::$message .= "\n" . $message;
+
+    if (strlen(self::$message) > 2048) { // на всякий лучше лишний раз отправить сообщение
+      self::flush();
+    }
   }
 
   public static function sendImmediate(string $message): void {
