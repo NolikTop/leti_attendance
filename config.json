@@ -1,0 +1,17 @@
+{
+  "logger": {
+    "debug": false
+  },
+  "log_chat": {
+    "enabled": true,
+    "chat_id": 1,
+    "access_token": ""
+  },
+  "users": [
+    {
+      "name": "Aydan Minnegaraev",
+      "email": "",
+      "password": ""
+    }
+  ]
+}
